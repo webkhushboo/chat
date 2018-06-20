@@ -1,3 +1,4 @@
+import { LoadingService } from './services/loading.service';
 import { AlertService } from './services/alert.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -6,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import {AlertModule} from 'ngx-bootstrap/alert';
+import { LoadingModule } from 'ngx-loading';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -38,9 +40,11 @@ import { ChatroomWindowComponent } from './pages/chat/components/chatroom-window
     ReactiveFormsModule,
     FormsModule,
     BsDropdownModule.forRoot(),
-    AlertModule.forRoot()
+    AlertModule.forRoot(),
+    LoadingModule
   ],
-  providers: [AlertService],
+  providers: [AlertService,
+  LoadingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
