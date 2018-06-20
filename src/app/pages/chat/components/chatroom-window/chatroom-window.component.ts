@@ -14,7 +14,7 @@ export class ChatroomWindowComponent implements OnInit {
     sender: {
       firstName: 'Steve',
       lastName: 'Smith',
-      photoUrl: 'http://via.placeholder.com/150x150'
+      photoUrl: 'http://via.placeholder.com/50x50'
     }
   },
   {
@@ -23,7 +23,7 @@ export class ChatroomWindowComponent implements OnInit {
     sender: {
       firstName: 'Steve',
       lastName: 'Smith',
-      photoUrl: 'http://via.placeholder.com/150x150'
+      photoUrl: 'http://via.placeholder.com/50x50'
     }
   },
   {
@@ -32,7 +32,7 @@ export class ChatroomWindowComponent implements OnInit {
     sender: {
       firstName: 'Steve A',
       lastName: 'Smith',
-      photoUrl: 'http://via.placeholder.com/150x150'
+      photoUrl: 'http://via.placeholder.com/50x50'
     }
   },
   {
@@ -41,7 +41,7 @@ export class ChatroomWindowComponent implements OnInit {
     sender: {
       firstName: 'Steve B',
       lastName: 'Smith',
-      photoUrl: 'http://via.placeholder.com/150x150'
+      photoUrl: 'http://via.placeholder.com/50x50'
     }
   }];
   constructor() { }
