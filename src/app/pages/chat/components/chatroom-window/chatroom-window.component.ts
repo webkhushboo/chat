@@ -6,7 +6,44 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chatroom-window.component.scss']
 })
 export class ChatroomWindowComponent implements OnInit {
-  public dummyData =[];
+
+  //TODO replace with firesbase data
+  public dummyData = [{
+    message: 'Sed enim velit , condimentum nec tincidunt non, elementum Sed nisi.',
+    createdAt: new Date(),
+    sender: {
+      firstName: 'Steve',
+      lastName: 'Smith',
+      photoUrl: 'http://via.placeholder.com/150x150'
+    }
+  },
+  {
+    message: 'Sed enim velit , condimentum nec tincidunt non, elementum Sed nisi.',
+    createdAt: new Date(),
+    sender: {
+      firstName: 'Steve',
+      lastName: 'Smith',
+      photoUrl: 'http://via.placeholder.com/150x150'
+    }
+  },
+  {
+    message: 'Sed enim velit , condimentum nec tincidunt non, elementum Sed nisi.',
+    createdAt: new Date(),
+    sender: {
+      firstName: 'Steve A',
+      lastName: 'Smith',
+      photoUrl: 'http://via.placeholder.com/150x150'
+    }
+  },
+  {
+    message: 'Sed enim velit , condimentum nec tincidunt non, elementum Sed nisi.',
+    createdAt: new Date(),
+    sender: {
+      firstName: 'Steve B',
+      lastName: 'Smith',
+      photoUrl: 'http://via.placeholder.com/150x150'
+    }
+  }];
   constructor() { }
 
   ngOnInit() {

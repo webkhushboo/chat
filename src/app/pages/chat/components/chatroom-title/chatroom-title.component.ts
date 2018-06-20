@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-chatroom-title',
@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chatroom-title.component.scss']
 })
 export class ChatroomTitleComponent implements OnInit {
-
-  constructor() { }
+  
+  @Input() title: string;
+   constructor() { }
 
   ngOnInit() {
   }
