@@ -19,6 +19,7 @@ import { ChatroomListComponent } from './pages/chat/components/chatroom-list/cha
 import { ChatroomTitleComponent } from './pages/chat/components/chatroom-title/chatroom-title.component';
 import { ChatMessageComponent } from './pages/chat/components/chat-message/chat-message.component';
 import { ChatroomWindowComponent } from './pages/chat/components/chatroom-window/chatroom-window.component';
+import { AuthService } from './services/auth.service';
 
 
 @NgModule({
@@ -43,8 +44,11 @@ import { ChatroomWindowComponent } from './pages/chat/components/chatroom-window
     AlertModule.forRoot(),
     LoadingModule
   ],
-  providers: [AlertService,
-  LoadingService],
+  providers: [
+  AlertService,
+  LoadingService,
+  AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
