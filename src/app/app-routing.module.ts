@@ -1,3 +1,4 @@
+import { AuthGuard } from './guards/auth.guard';
 import { ChatComponent } from './pages/chat/chat.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { NgModule } from '@angular/core';
@@ -8,7 +9,7 @@ const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/login' },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignUpComponent },
-  { path: 'chat', component: ChatComponent },
+  { path: 'chat', component: ChatComponent, canActivate: [AuthGuard] },
   { path: '**', redirectTo: '/login'}
 ];
 

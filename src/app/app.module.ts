@@ -1,3 +1,4 @@
+import { AuthGuard } from './guards/auth.guard';
 import { LoadingService } from './services/loading.service';
 import { AlertService } from './services/alert.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -47,7 +48,8 @@ import { AuthService } from './services/auth.service';
   providers: [
   AlertService,
   LoadingService,
-  AuthService
+  AuthService,
+  AuthGuard
   ],
   bootstrap: [AppComponent]
 })
